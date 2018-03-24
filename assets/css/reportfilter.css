@@ -1,0 +1,109 @@
+.half {
+    width: 280px;
+  }
+  .icon{
+    margin-top: 8px;
+     margin-right:10px;font-size:20px;
+  }
+
+  .btn-group .button-reportfilter{
+    color:#5b5d63;
+    background-color:#e0dede;
+  }
+
+  .button-reportfilter:hover{
+    color:#1dc0d6;
+  }
+
+  .button-reportfilter:focus{
+      background-color:#eff0f2;
+      color:black;
+  }
+
+  .searchIcon{
+    font-size:20px;
+    margin-top:9px;
+    margin-left:6px;
+  }
+
+  .right-inner-addon {
+      position: relative;
+  }
+
+.right-inner-addon input{
+padding-right: 30px;
+}
+
+.right-inner-addon i{
+
+position:absolute;
+/*text-indent: -15px;
+bottom: -8px;
+font-size: 1.3em;*/
+right: 0px;
+padding: 10px 12px;
+}
+
+
+.button-grp{
+width: 100px;
+}
+
+.badge {
+padding: 1px 9px 2px;
+line-height: 1.4;
+font-size: 16px;
+font-weight: 400;
+width: 160px;
+white-space: nowrap;
+color: #ffffff;
+background-color: #00a5d5;
+-webkit-border-radius: 10px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+}
+
+.filterShowEmpty{
+padding-top: 5px;
+padding-right: 10px;
+padding-bottom: 0px;
+padding-left: 0px;
+margin-left: 18px;
+}
+
+.processingbadge{
+margin-left:30px;
+background-color:#007ca0;
+}
+
+.approvedbadge{
+margin-left:30px;
+background-color:#afbd22;
+color:#404040;
+}
+
+.reimbursedbadge{
+margin-left:30px;
+background-color:#585f11;
+}
+
+.closebadge{
+margin-left:30px;
+background-color:#ccc;
+color:#404040
+}
+
+.filtertext{
+  color: #00a5d5;
+}
+
+.filtertext:hover{
+  color:#007ca0;
+}
+
+.resettext{
+  color: #999;
+}
+.resettext:hover{
+  color:#007ca0;
+}

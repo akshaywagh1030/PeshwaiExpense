@@ -1,0 +1,178 @@
+#signIn {
+  background: #eee;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+  font-size: 16px;
+  height: 100%;
+  line-height: 1.4;
+  min-height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+
+@media only screen and (max-width: 760px) {
+   body {
+     background: #39444b   !important;
+
+     min-width: 760px !important;
+
+   }
+  .logincontent
+   {
+      background: #39444b   !important;
+      min-width: 480px !important
+
+   }
+   /* .login-form
+   {
+         min-width:480px !important;
+           margin-left: -55px;
+
+
+   }
+   .login
+   {
+     min-width:480px !important;
+      margin-left: -55px;
+   }
+  .linkbutton
+  {
+    min-width:480px !important;
+
+
+  } */
+
+}
+
+
+
+
+
+.logo
+{
+  margin-left:60px;
+  margin-top: -30px;
+}
+.btn-success
+{
+  color:#fff;
+  background-color:#2ecc71;
+  border-color:#2ecc71
+  }
+  .btn-success.focus,.btn-success:focus
+  {
+    color:#fff;
+    background-color:#25a25a;
+    border-color:#176437
+  }
+  .btn-success:hover
+  {
+    color:#fff;
+    background-color:#25a25a;
+    border-color:#239a55
+  }
+  .group-btn{
+    width:200px;
+  }
+  .reveal {
+    background-color: #eee;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+
+#login img{
+  margin: 10px 0;
+}
+#login .center {
+  text-align: center;
+}
+
+#login .login {
+  max-width: 300px;
+	margin: 35px auto;
+}
+
+ .login-form{
+  padding:0px 25px;
+}
+ .widthfiled
+{
+  width: 180px;
+}
+ .button1 {
+  width: 290px;
+  background-color: #00a5d5;
+  height: 40px;
+  style="width:290px;background-color:#00a5d5;height:40px
+}
+.logincontent{
+  background-color:#404040;
+  height:100%;
+  height: 729px;
+  margin-top: -22px;
+  background: rgba(57,68,75,.85 );
+}
+.textfield1{
+border-radius: 6px;
+box-sizing: border-box;
+height: 50px;
+/* text-align: center; */
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size:14px;
+background-color:white;
+text-indent: 32px;
+
+}
+
+
+.textfield1:focus{
+  background: #fff;
+  border: 2px solid #00a5d5;
+  outline: 0
+}
+.label {
+  color: #00a5d5
+}
+
+
+.inputContainer{
+   position:relative;
+  }
+.myInput
+{ padding-left:25px; /* This will move the text from under the image */ }
+  .inputImg{
+    color: #00a5d5;
+      left:5px;
+      position:absolute;
+      margin-left:230px;
+      top:15px;
+      font-size:14px;
+      z-index:2;
+
+ }
+
+ .svg-inline--fa {
+    font-size: inherit;
+    color: #ddd;
+    left: 13px;
+    position: absolute;
+    top: 13px;
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+ .transition015 {
+   -webkit-transition: all, .15s, ease-in-out;
+   -moz-transition: all, .15s, ease-in-out;
+   -o-transition: all, .15s, ease-in-out;
+   transition: all .15s ease-in-out
+ }

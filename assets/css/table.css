@@ -1,0 +1,139 @@
+.table-fixed {
+  table-layout: fixed;
+}
+table {
+  padding: 20px;
+}
+
+.table-cards {
+  border-collapse: separate;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 10px;
+  margin-bottom: -20px;
+}
+tr {
+  background-color: white ;
+  width: auto;
+}
+
+tr:hover td {
+  background-color: #d4f2fa;
+}
+
+body{
+  background-color: #eee;
+}
+
+.table-textSmall {
+  font-size: 12px;
+}
+
+.filter-state.smallState {
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  border-radius: 9px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 10px;
+  height: 17px;
+  line-height: 1.4;
+  margin: 1px 110px 10px -10px;
+  position: relative;
+  top: -2px;
+  width: 66px;
+}
+
+.impstar {
+  /* display: table-cell; */
+  color: #fbd300;
+  top: 16px;
+  font-size: 15px;
+  left: -20px;
+  position: relative;
+}
+
+.table-reports tr td.reportName a {
+  color: #5d6e73;
+}
+.table thead th {
+    /* background: rgba(238,238,238,.5); */
+    border-bottom: 0px solid #ddd;
+    background-color: #eee;
+    color: #999;
+    font-size: 8px;
+    font-weight: 500;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+
+.filter-state.open {
+  background: #00a5d5;
+  color: #fff;
+}
+
+.filter-state.closed {
+  background: #ccc;
+  color: #404040;
+}
+
+.filter-state:last-child {
+  margin-bottom: 0;
+}
+
+.filter-state {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.table-reports tr th.checkbox {
+  border-left: none;
+  padding: 9px 7px 9px 10px;
+  position: static;
+  width: 12px;
+}
+
+
+tr td:first-child, tr th:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+tr td:last-child, tr th:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.pagination-bar-bottom .pagination-bar {
+    right: 1px;
+}
+.pagination-bar>div label {
+    color: #999;
+    font-size: 12px;
+    margin-right: 8px;
+}
+.btn-secondary-outline {
+    background-color: #fff;
+    background-image: none;
+    border-color: #ddd;
+    color: #666;
+    background: #f8f8f8;
+    top: 0px;
+    left: -5px;
+}
+.pagination-bar__pages{
+  text-align: right;
+}
+#reportsTable_29394607:focus{
+  background-color: red;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=">
+   <title></title>
+   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <link href="assets/css/login_mailbutton.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
+   <script src="assets/js/validation.js"></script>
+
+ </head>
+
+ <body id="signIn"  style="background-image:url(https://d2k5nsl2zxldvw.cloudfront.net/images/signInBG/bg_signIn_19.jpg);">
+   <nav class="navbar fixed-top navbar-expand-lg navbar-dark  fixed-top">
+     <div class="container-fluid">
+         <a class="navbar-brand" href="index.html"></a>
+
+       <div class="collapse navbar-collapse" id="navbarResponsive">
+         <ul class="navbar-nav ml-auto" >
+           <li class="nav-item">
+             <a class="nav-link" href="#" target='_blank' font-size:12px>Our Product</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#" target='_blank'>Pricing</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#" target='_blank'>Jobs</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#" target='_blank'>About us</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#" target='_blank'>Blog</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#" target='_blank'>Status</a>
+           </li>
+
+           <li class="nav-item">
+             <a class="nav-link" href="#" target='_blank'>Privacy</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#" target='_blank'>Help</a>
+           </li>
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           <li>
+             <a href="#" class="btn btn-success">Sign Up</a>
+           </li>
+
+        </div>
+      </nav>
+
+
+
+
+
+
+
+ <div class="row">
+   <div  class="col-md-1 sm-1 lg-1">
+
+
+ <div id="login" style="margin-left: 40px ">
+<div class="logincontent" style="width:400px;height: 675px ;height: 729px;margin-top: -22px;">
+   <div class="row">
+     <div class="col-md-12 sm-1 lg-1">
+       <div class="login ">
+
+         <form  class="col-md-12 sm-1 lg-1" style="margin-left:-15px;" class="login-form" id="UserLoginForm" onsubmit="validation()" accept-charset="utf-8" name="myfrom">
+           <div style="margin-top: 40px;">
+             <div class="logo">
+               <img src="assets/images/log.png">
+             </div>
+             <table>
+
+           <tr><td>
+             <div class="inputContainer1" >
+               <input name="data" class="textfield1" id="name" name="uname" placeholder="Email address" maxlength="289" type="text" style="width: 289px;" id="UserUsername">
+               <label for="signinemail" class="fa fa-user"></label>
+
+
+            </div>
+           </td></tr><tr><td></td></tr><tr><td></td></tr><td></td><tr></tr><tr><td></td></tr>
+
+              <tr><td>
+               <div class="inputContainer1">
+               <div>
+               <input name="data"  class="textfield1" id="pass" placeholder="Password" type="password" style="width: 289px;" id="UserPassword"></input>
+               <label for="signinpassword" class="fas fa-key"></label>
+
+
+             <span><a href="#" class="inputImg">Forgot?</a></span>
+
+             </div></td></tr>
+
+           </td></tr><tr><td></td></tr><tr><td></td></tr><td></td><tr></tr><tr><td></td></tr>
+           </td></tr><tr><td></td></tr><tr><td></td></tr><td></td><tr></tr><tr><td></td></tr>
+           <tr><td><div class="form-group">
+             <input class="btn btn-primary btn-lg btn-block " id="subbtn" type="submit" value="Sign in" style="width:289px;background-color:#00a5d5;height:53px;font-size: small;font-weight: bold;" >
+           </div></td></tr></table>
+           </div>
+
+
+           <div class="linkbutton">
+
+           <p class="msg">Sign in with:</p>
+           <div class="row md-4 ml-2">
+
+           <span class="col-6 md-4"><button type="button" class="btn btn-google btn-outline-secondary  " style="width:115px; ">Google</button></span>
+           <span class="col-6 md-4"><button type="button" class="btn btn-yahoo btn-outline-secondary  " style="width:115px;margin-left:-15px ">Yahoo</button></span>
+
+
+           </div>
+           <div class="row md-4 mt-2 ml-2">
+
+           <span class="col-6 md-4"><button type="button" class="btn btn-SAML btn-outline-secondary  " style="width:115px; ">SAML</button></span>
+           <span class="col-6 md-4"><button type="button" class="btn btn-Intuit btn-outline-secondary  " style="width:115px;margin-left:-15px ">Intuit</button></span>
+
+
+           </div>
+             </div>
+
+         </form>
+
+       </div><!--/.login-->
+     </div><!--/.span12-->
+   </div><!--/.row-fluid-->
+
+</div>  <!--/.content pane-->
+ </div><!--/.container-->
+ </div>
+</div>
+</div>
+ </body>
+</html>
