@@ -7,311 +7,293 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
     <title>Bootstrap Kickstarter Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/Site_Manual.css">
+    <link rel="stylesheet" href="assets/css/www.css">
+    <!-- <link rel="stylesheet" href="table2.css"> -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
     <!-- Custom styles for this template -->
     <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
     <link href="assets/css/card.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/reportfilter.css">
+    <style>
+      .filtertext{
+        color: #00a5d5;
+      }
 
+      .filtertext:hover{
+        color:#007ca0;
+      }
+
+      .resettext{
+        color: #999;
+      }
+      .resettext:hover{
+        color:#007ca0;
+      }
+
+
+    </style>
   </head>
 
-  <body>
+  <body style="background-color:#eee;">
+ <div class="w3-sidebar w3-light-grey w3-bar-block am-background" id="am-hide-sidebar" style="width:16%; margin-top:-56px;height:148%;">
+   <div>
+     <div class="user-image dropdown show">
+       <center>
+         <a  href="#" data-toggle="modal" data-target="#myModal2" id="profile_image">
+           <img src="assets/images/usericon.png" alt="">
+         </a>
+       </center>
 
-
-    <!-- Page Content -->
-    <div class="container" style="max-width:100%;">
-
-
-      <!-- Content Row -->
-      <div class="row">
-        <!-- Sidebar Column -->
-        <div class="col-2 mb-4">
-          <div class="list-group">
-
-            <!-- SideBar Examples -->
-            <div id="sidebar">
-
-           <!-- row 1 -->
-           <div>
-             <div class="user-image dropdown show">
-              <center> <a  href="#" data-toggle="modal" data-target="#myModal2" id="profile_image">
-                 <img src="bhupesh.jpg" alt="">
-               </a>
-             </center>
-             </div>
-             <div class="user-Email-am">Bhupesh Patil</div>
-           </div>
-           <div class="Menu-am">
-             <ul id="menulnk" class="menulnk">
-               <li class="myactive "> <a  href="inbox.html" ><i class="fa fa-inbox  myactive_icon"></i> &nbspInbox</a></li>
-               <li> <a  href="expenses.html"><i class="fa fa-clone icon-am"></i> &nbspExpenses</a></li>
-               <li> <a href="report.html" ><i class="fa fa-newspaper-o  icon-am"></i> &nbspReport</a></li>
-             </ul>
-           </div>
-
-        </div>
-
-        <!-- Modal  -->
-        <div class="modal fade modal-am-deco" id="myModal2" role="dialog">
-<div class="modal-dialog">
-
- <!-- Modal content-->
- <div class="modal-content">
-
-   <div class="modal-body">
-
-     <!-- row 1 -->
-     <div class="row row-modal-am">
-     <div><button type="button" class="close" data-dismiss="modal" style="margin-left:10px;margin-top:0px;">×</button></div>
-     <div class="user-image-model">
-       <a  href="#" data-toggle="modal" data-target="#myModal2" id="profile_image">
-         <img src="bhupesh.jpg" alt="" height="160" width="160">
-       </a>
-     </div>
-     <div class="user-Email-am" style="font-weight:500; color: black; ">
-       <p style="margin-left:20px;">Bhupesh Patil<br>bhupesh.patil@gmail.com</p>
-       <a href="" class="btn btn-secondary-am btn-sm fa fa-gear" style="">Account Settings</a>
-     </div>
-   </div>
-
-
-   <!-- row 2 -->
-   <div class="row row2-am">
-     <div class="row2-hover-am">
-       <i class="fa fa-bullhorn horn-am"></i>
-       <a href="#" style="margin-left:10px; text-decoration:none;">Product Changes</a>
-     </div>
-   </div>
-   <!-- row 3 -->
-
-   <div class="row row3-am">
-     <div>
-       <i class="fa fa-question que-am"></i>
-       <a href="#" style="margin-left:13px; text-decoration:none;">Help and Feedback</a>
-     </div>
-   </div>
-
-   <!-- row 4 -->
-   <div class="row row4-am" style="margin-top:10px;">
-     <div>
-       <i class="fa fa-power-off" style="color:red"></i>
-       <a href="#" style="margin-left:13px; text-decoration:none;">Sign Out</a>
-     </div>
-   </div>
-
-   </div>
-
- </div>
-
-</div>
-</div>
-
-
-          </div>
-        </div>
-        <!-- Content Column -->
-        <div class="col-10 mb-4 ">
-
-          <!-- header -->
-          <div class="row header-am" style="height:75px; margin-top: -35px;">
-
-            <div class="col-lg-2 mb4 ">
-              <h3 class="floatLeft-am" style="color:#999; margin-top:20px;">
-                Inbox
-              </h3>
-            </div>
-            <div class="col-lg-10 mb-4 page-header-am">
-
-            </div>
-          </div>
-
-
-          <!-- ************************************************************************************* -->
-
-
-
-<div class="container-fluid">
-<div class="row" style="margin-top:10px;">
-<div class="card " style="margin-left: 23px;width: 1144px">
-  <div style="height: auto;" class="ReactCollapse--collapse">
-    <div class="ReactCollapse--content">
-       <!-- <div class="row"> -->
-
-      <div class="card-header" style="background-color: white;">
-        <div class="card-header__icon">
-          <div class="icon"><img src="https://d2k5nsl2zxldvw.cloudfront.net/images/conciergeIcon.png" alt="" class="icon1"></div>
-          <div class="icon-loader"></div>
-        </div>
-        <span data-toggle="collapse" href="#collapse-example" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="d-block">
-            <i class="fa fa-chevron-down pull-right"> </i>
-
-          </span>
-
-        <div class=class="card-meta">
-          <div class="card-meta__from"><b>Concierge</b></div>
-          <div class="card-meta__subject">
-            <span>Welcome to Expensify! I'm Concierge and here to help you set up your account, organize your receipts, and much more. To get started, what do you want to do?</span>
-          </div>
-          <div id="collapse-example" class="collapse" aria-labelledby="heading-example">
-
-
-            <div class="mulcards">
-              <div class="row" style="width: 1302px">
-
-                <div class="col-lg-3 ">
-                  <div class="choice sendExpenses">
-                    <div class="choice__icon"><img src="https://d2k5nsl2zxldvw.cloudfront.net/images/icons/submit.svg" alt=""></div>
-                    <div class="choice__text">
-                      <h3>Submit Receipts</h3>
-                      <p>For employees looking to submit receipts to a manager</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="choice receiveExpenses">
-                    <div class="choice__icon"><img src="https://d2k5nsl2zxldvw.cloudfront.net/images/icons/collect.svg" alt=""></div>
-                    <div class="choice__text">
-                      <h3>Collect Receipts</h3>
-                      <p>For accountants and managers from companies of all sizes</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="choice keepOwnReceipts">
-                    <div class="choice__icon"><img src="https://d2k5nsl2zxldvw.cloudfront.net/images/icons/personal.svg" alt=""></div>
-                    <div class="choice__text">
-                      <h3>Track Personal Expenses</h3>
-                      <p>For personal use, individual tax returns, and sole proprietors</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-
-
-          </div>
-        </div>
-
-      </div><!-- </div> -->
-
-    <!-- </div> -->
-    </div>
-  </div>
-</div>  <!-- first card -->
-
-<!-- Second card -->
-
-
-<div class="card" style="margin-top: 19px; width: 1144px;margin-left: 23px;">
- <div style="height: auto;" class="ReactCollapse--collapse">
-   <div class="ReactCollapse--content">
-      <!-- <div class="row"> -->
-
-     <div class="card-header" style="background-color: white;">
-       <div class="card-header__icon">
-         <div class="icon"><img src="https://d2k5nsl2zxldvw.cloudfront.net/images/conciergeIcon.png" alt="" class="icon1"></div>
-         <div class="icon-loader"></div>
        </div>
-       <span data-toggle="collapse" href="#collapse-example1" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="d-block">
-           <i class="fa fa-chevron-down pull-right"> </i>
+     <div class="user-Email-am">Bhupesh Patil</div>
+   </div>
+   <div class="Menu-am">
+     <ul id="menulnk" class="menulnk">
+       <li class="myactive "> <a  href="inbox.html" ><i class="fa fa-inbox myactive_icon " ></i> &nbspInbox</a></li>
+       <li> <a  href="expenses.html"><i class="fa fa-clone icon-am" style="color:grey;"></i> &nbspExpenses</a></li>
+       <li > <a href="report.html" ><i class="fa fa-newspaper-o icon-am" style="color:grey;"></i> &nbspReport</a></li>
+     </ul>
+   </div>
+ </div>
+ <!-- Headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+ <div class="page-header">
 
-         </span>
+     <h3 class="floatLeft-am" style="color:#999; margin-top:20px; font-weight:300;">
+         <b>Inbox</b>
+       </h3>
 
-       <div class=class="card-meta">
-          <div class="card-meta__from"><b>Concierge</b></div>
-            <div class="card-meta__subject">
-                <span>Do you want me to submit your expenses for you? Just let me know how often I should submit your expenses to your manager.</span>
+
+
+
+  </div>
+<!-- Vinita'ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+
+<style media="screen">
+
+  @media only screen and (max-width: 1300px)
+  {
+  .card
+  {
+    width: 100%;
+    float: left;
+    margin: 0;
+  }
+  }
+  </style>
+  <div>
+    <div class="container-fluid" style="width:65%;">
+
+      <!-- <div class="mt-5 mb-3 "> -->
+      <div class="card" style="margin-top: 8rem !important; margin-left:12px;" ; >
+        <div style="height: auto;" class="ReactCollapse--collapse ">
+          <div class="ReactCollapse--content">
+             <!-- <div class="row"> -->
+
+            <div class="card-header" style="background-color: white;">
+              <div class="card-header__icon">
+                <div class="icon"><img src="https://d2k5nsl2zxldvw.cloudfront.net/images/conciergeIcon.png" alt="" class="icon1"></div>
+                <div class="icon-loader"></div>
               </div>
-              <div id="collapse-example1" class="collapse" aria-labelledby="heading-example">
+              <span data-toggle="collapse" href="#collapse-example" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="d-block">
+                  <i class="fa fa-chevron-down pull-right"> </i>
 
-                <form class="form rowGaps center" novalidate="" style="margin-top: 51px;">
-                  <div>
-                    <select class=" harvestingFrequency vAlignMiddle large editable marginRight">
-                      <option value="immediate">Once a day</option>
-                      <option value="weekly">Every Sunday night</option>
-                      <option value="semimonthly">On the 1st and 15th of each month</option>
-                      <option value="monthly">Once a month</option>
-                      <option value="trip">At the end of a trip, after 2 days of inactivity</option>
-                      <option value="manual">When you manually submit</option></select></div>
-                  <button class="btn btn-success btn-lg marginTop20" style="border-color: #2ecc71;">Confirm</button>
-                </form>
+                </span>
+
+              <div class=class="card-meta">
+                <div class="card-meta__from"><b>Concierge</b></div>
+                <div class="card-meta__subject">
+                  <span>Welcome to Expensify! I'm Concierge and here to help you set up your account, organize your receipts, and much more. To get started, what do you want to do?</span>
+                </div>
+                <div id="collapse-example" class="collapse" aria-labelledby="heading-example">
 
 
+                  <div class="mulcards">
+                    <div class="row" style="width: 1302px">
 
+                      <div class="col-lg-3 ">
+                        <div class="choice sendExpenses">
+                          <div class="choice__icon"><img src="https://d2k5nsl2zxldvw.cloudfront.net/images/icons/submit.svg" alt=""></div>
+                          <div class="choice__text">
+                            <h3>Submit Receipts</h3>
+                            <p>For employees looking to submit receipts to a manager</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="choice receiveExpenses">
+                          <div class="choice__icon"><img src="https://d2k5nsl2zxldvw.cloudfront.net/images/icons/collect.svg" alt=""></div>
+                          <div class="choice__text">
+                            <h3>Collect Receipts</h3>
+                            <p>For accountants and managers from companies of all sizes</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="choice keepOwnReceipts">
+                          <div class="choice__icon"><img src="https://d2k5nsl2zxldvw.cloudfront.net/images/icons/personal.svg" alt=""></div>
+                          <div class="choice__text">
+                            <h3>Track Personal Expenses</h3>
+                            <p>For personal use, individual tax returns, and sole proprietors</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div><!-- </div> -->
+          </div>
+        </div>
+      </div>  <!-- first card -->
+    <!-- </div> -->
 
+     <!-- Second card -->
+
+      <div style="padding-left: 18px; " class="mt-5 mb-3 " >
+     <div class="card ml-50" style="margin-top: 19px; margin-left:-5px;">
+       <div style="height: auto;" class="ReactCollapse--collapse">
+         <div class="ReactCollapse--content">
+            <!-- <div class="row"> -->
+
+           <div class="card-header" style="background-color: white;">
+             <div class="card-header__icon">
+               <div class="icon"><img src="https://d2k5nsl2zxldvw.cloudfront.net/images/conciergeIcon.png" alt="" class="icon1"></div>
+               <div class="icon-loader"></div>
+             </div>
+             <span data-toggle="collapse" href="#collapse-example1" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="d-block">
+                 <i class="fa fa-chevron-down pull-right"> </i>
+
+               </span>
+
+             <div class=class="card-meta">
+                <div class="card-meta__from"><b>Concierge</b></div>
+                  <div class="card-meta__subject">
+                      <span>Do you want me to submit your expenses for you? Just let me know how often I should submit your expenses to your manager.</span>
+                    </div>
+                    <div id="collapse-example1" class="collapse" aria-labelledby="heading-example">
+
+                      <form class="form rowGaps center" novalidate="" style="margin-top: 51px;">
+                        <div>
+                          <select class=" harvestingFrequency vAlignMiddle large editable marginRight">
+                            <option value="immediate">Once a day</option>
+                            <option value="weekly">Every Sunday night</option>
+                            <option value="semimonthly">On the 1st and 15th of each month</option>
+                            <option value="monthly">Once a month</option>
+                            <option value="trip">At the end of a trip, after 2 days of inactivity</option>
+                            <option value="manual">When you manually submit</option></select></div>
+                        <button class="btn btn-success btn-lg marginTop20" style="border-color: #2ecc71;">Confirm</button>
+                      </form>
+               </div>
+             </div>
+           </div>
          </div>
        </div>
-
-     </div><!-- </div> -->
-
-   <!-- </div> -->
+     </div>
    </div>
- </div>
+  </div>  <!-- container flued -->
+<!-- </div> -->
+
+<!-- Aniket********************************************************************************** -->
+
+<!-- FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+<div class="footer" style="margin-left:15%;">
+  <div class="bottom-footer">
+    <div class="row" style="border-top:1px;">
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+    <ul class="footer-nav-left">
+      <li><a href="#" class="alert-link">OUR PRODUCT</a></li>
+          <li><a href="#" class="alert-link">UPGRADE</a></li>
+          <li><a href="#" class="alert-link">PRICING</a></li>
+          <li><a href="#" class="alert-link">JOBS</a></li>
+          <li><a href="#" class="alert-link">ABOUT US</a></li>
+          <li><a href="#" class="alert-link">BLOG</a></li>
+          <li><a href="#" class="alert-link">COMMUNITY</a></li>
+          <li><a href="#" class="alert-link">STATUS</a></li>
+          <li><a href="#" class="alert-link">PRIVACY</a></li>
+          <li><a href="#" class="alert-link">HELP</a></li>
+          <!-- <li class="cpyright-am">©2018 PeshwaiExpense, Inc.</li> -->
+    </ul>
+  </div>
+  <p class="cpyright-am" style="margin-left:75px;">©2018 PeshwaiExpense, Inc.</p>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
+</div>
+</div>
+</div>
+
+<!-- Modal ********************************************************************************************** -->
+<!-- Modal  -->
+<div class="modal fade modal-am-deco" id="myModal2" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+
+<div class="modal-body">
+
+<!-- row 1 -->
+<div class="row row-modal-am">
+<div><button type="button" class="close" data-dismiss="modal" style="margin-left:10px;margin-top:0px;">×</button></div>
+<div class="user-image-model">
+<a  href="#" data-toggle="modal" data-target="#myModal2" id="profile_image">
+ <img src="assets/images/usericon.png" alt="" height="160" width="160">
+</a>
+</div>
+<div class="user-Email-am" style="font-weight:500; color: black; ">
+<p style="margin-left:20px;">Bhupesh Patil<br>bhupesh.patil@gmail.com</p>
+<a href="" class="btn btn-secondary-am btn-sm fa fa-gear" style="">Account Settings</a>
+</div>
 </div>
 
 
+<!-- row 2 -->
+<div class="row row2-am">
+<div class="row2-hover-am">
+<i class="fa fa-bullhorn horn-am"></i>
+<a href="#" style="margin-left:10px; text-decoration:none;">Product Changes</a>
+</div>
+</div>
+<!-- row 3 -->
 
-
-
-
-
-
-
-
-
-
-</div>  <!-- container flued -->
+<div class="row row3-am">
+<div>
+<i class="fa fa-question que-am"></i>
+<a href="#" style="margin-left:13px; text-decoration:none;">Help and Feedback</a>
+</div>
 </div>
 
+<!-- row 4 -->
+<div class="row row4-am" style="margin-top:10px;">
+<div>
+<i class="fa fa-power-off" style="color:red"></i>
+<a href="#" style="margin-left:13px; text-decoration:none;">Sign Out</a>
+</div>
+</div>
 
-      </div>
-      <!-- /.row -->
+</div>
 
-    </div>
-    <!-- /.container -->
+</div>
 
-
-
-
-
-
-
-    <div class="site-footer" >
-            <div class="site-footer-pos">
-            <div class="bottom-footer">
-              <div class="row" style="border-top:1px;">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-              <ul class="footer-nav-left">
-                <li><a href="#" class="alert-link">OUR PRODUCT</a></li>
-                    <li><a href="#" class="alert-link">UPGRADE</a></li>
-                    <li><a href="#" class="alert-link">PRICING</a></li>
-                    <li><a href="#" class="alert-link">JOBS</a></li>
-                    <li><a href="#" class="alert-link">ABOUT US</a></li>
-                    <li><a href="#" class="alert-link">BLOG</a></li>
-                    <li><a href="#" class="alert-link">COMMUNITY</a></li>
-                    <li><a href="#" class="alert-link">STATUS</a></li>
-                    <li><a href="#" class="alert-link">PRIVACY</a></li>
-                    <li><a href="#" class="alert-link">HELP</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 cpyright" style="font-size: 10px">©2018 PeshwaiExpense, Inc.</div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-
+</div>
+</div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
   </body>
 
 </html>

@@ -1,5 +1,6 @@
 
-/* @media only screen and (max-width:  1300px)
+
+@media only screen and (max-width:  1300px)
 {
 .card
 {
@@ -7,7 +8,10 @@
   float: left;
   margin: 0;
 }
-} */
+}
+
+
+
 
 .page-header-title{
   margin-left: 238px;
@@ -43,7 +47,7 @@ z-index: 2097;
 {
   margin-top: 80px;
   height: auto;
-  width:100%;
+  width:1300px;
   background-color: white;
 }
 
@@ -58,8 +62,7 @@ color: gray;
 font-weight: 400;ion: absolute;
     top: 10px;
     transition: top .25s ease-in-out,opacity .25s ease-in-out;
-   margin-top: 8px;
-
+  margin-top: -4px;
 }
 @media (min-width:900px) {
   .card-meta__subject {
@@ -91,13 +94,16 @@ font-weight: 400;ion: absolute;
 .card-meta__subject
 {
     padding-top: 3px;
-    margin-top: 26px;
+    margin-top: 1px;
     left:8px;
     color: #5d6e73;
     font-size: 15px;
    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
      top: 18px;
-
+     margin-left: 52px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 }
 .mulcards
@@ -128,8 +134,8 @@ margin-top: 54px;
 }
 .card
 {
-  /* width: 1000px;
-  margin-left: 300px; */
+  width: 1000px;
+  margin-left: 300px;
 }
 
 .ReactCollapse--content {
@@ -319,66 +325,4 @@ white-space: nowrap;
   body{
     padding-top: 56px;
   }
-}
-
-/*  for responsive css*/
-      </div>
-      <div class="card-meta card-meta1">
-        <div class="card-meta__from"><b>Concierge</b></div>
-
-.card-header__icon .icon {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .045);
-  -moz-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .045);
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .045);
-  -webkit-transition: all, .25s, cubic-bezier(.175, .885, .32, 1.275);
-  -moz-transition: all, .25s, cubic-bezier(.175, .885, .32, 1.275);
-  -o-transition: all, .25s, cubic-bezier(.175, .885, .32, 1.275);
-  transition: all .25s cubic-bezier(.175, .885, .32, 1.275);
-  background: #eee;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  z-index: 9
-}
-
-.loading .card-header__icon .icon {
-  -webkit-transform: scale(.875);
-  -moz-transform: scale(.875);
-  -ms-transform: scale(.875);
-  -o-transform: scale(.875);
-  transform: scale(.875)
-}
-.card-header__icon .icon {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .045);
-  -moz-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .045);
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .045);
-  -webkit-transition: all, .25s, cubic-bezier(.175, .885, .32, 1.275);
-  -moz-transition: all, .25s, cubic-bezier(.175, .885, .32, 1.275);
-  -o-transition: all, .25s, cubic-bezier(.175, .885, .32, 1.275);
-  transition: all .25s cubic-bezier(.175, .885, .32, 1.275);
-  background: #eee;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  z-index: 9
-}
-
-.loading .card-header__icon .icon {
-  -webkit-transform: scale(.875);
-  -moz-transform: scale(.875);
-  -ms-transform: scale(.875);
-  -o-transform: scale(.875);
-  transform: scale(.875)
 }

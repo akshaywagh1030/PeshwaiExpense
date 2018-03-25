@@ -11,376 +11,555 @@
     <title>Bootstrap Kickstarter Template</title>
 
     <!-- Bootstrap core CSS -->
-
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="assets/css/reportfilter.css">
     <link rel="stylesheet" href="assets/css/Site_Manual.css">
+    <link rel="stylesheet" href="assets/css/www.css">
+    <link rel="stylesheet" href="assets/css/table2.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
     <!-- Custom styles for this template -->
+    <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+    <link href="assets/css/card.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/reportfilter.css">
+    <style media="screen">
+    .create-expense-menu {
+      margin-top: 36px;
+    }
 
-    <link href="assets/css/main.css" rel="stylesheet">
+    .dropdown-menu{
+      transform: translate3d(10px, 36px, 0px);
+      min-width: 14rem;
+    }
 
+    element{
+      transform: translate3d(-55px, 38px, 0px);
+      left: -7px;
+      left: -58px;
+    }
+    </style>
   </head>
 
-  <body>
+  <body style="background-color:#eee;">
+ <div class="w3-sidebar w3-light-grey w3-bar-block am-background" id="am-hide-sidebar" style="width:16%; margin-top:-56px;height:148%;">
+   <div>
+     <div class="user-image dropdown show">
+       <center>
+         <a  href="#" data-toggle="modal" data-target="#myModal2" id="profile_image">
+           <img src="assets/images/usericon.png" alt="">
+         </a>
+       </center>
 
-<style media="screen">
-.create-expense-menu {
-  margin-top: 36px;
-}
-
-.dropdown-menu{
-  transform: translate3d(10px, 36px, 0px);
-  min-width: 14rem;
-}
-
-element{
-  transform: translate3d(-55px, 38px, 0px);
-  left: -7px;
-  left: -58px;
-}
-</style>
-    <!-- Page Content -->
-    <div class="container" style="max-width:100%;">
-
-
-      <!-- Content Row -->
-      <div class="row">
-        <!-- Sidebar Column -->
-        <div class="col-lg-2 ">
-          <div class="list-group">
-
-            <!-- SideBar Examples -->
-            <div id="sidebar">
-
-           <!-- row 1 -->
-           <div>
-             <div class="user-image dropdown show">
-               <a  href="#" data-toggle="modal" data-target="#myModal2" id="profile_image">
-                 <img src="assets/images/usericon.png" alt="">
-               </a>
-                             </div>
-             <div class="user-Email-am">Bhupesh Patil</div>
-           </div>
-           <div class="Menu-am">
-             <ul id="menulnk" class="menulnk">
-               <li> <a  href="inbox.html" ><i class="fa fa-inbox icon-am"></i> &nbspInbox</a></li>
-               <li class="myactive "> <a  href="expenses.html"><i class="fa fa-clone myactive_icon"></i> &nbspExpenses</a></li>
-               <li> <a href="report.html" ><i class="fa fa-newspaper-o  icon-am "></i> &nbspReport</a></li>
-             </ul>
-           </div>
-
-        </div>
-
-        <!-- Modal  -->
-        <div class="modal fade modal-am-deco" id="myModal2" role="dialog">
-<div class="modal-dialog">
-
- <!-- Modal content-->
- <div class="modal-content">
-
-   <div class="modal-body">
-
-     <!-- row 1 -->
-     <div class="row row-modal-am">
-     <div><button type="button" class="close" data-dismiss="modal" style="margin-left:10px;margin-top:0px;">×</button></div>
-     <div class="user-image-model">
-       <a  href="#" data-toggle="modal" data-target="#myModal2" id="profile_image">
-         <img src="bhupesh.jpg" alt="" height="160" width="160">
-       </a>
-     </div>
-     <div class="user-Email-am" style="font-weight:500; color: black; ">
-       <p style="margin-left:18px;">Bhupesh Patil<br>bhupesh.patil@gmail.com</p>
-       <a href="" class="btn btn-secondary-am btn-sm fa fa-gear" style="">Account Settings</a>
-     </div>
+       </div>
+     <div class="user-Email-am">Bhupesh Patil</div>
    </div>
-
-
-   <!-- row 2 -->
-   <div class="row row2-am">
-     <div class="row2-hover-am">
-       <i class="fa fa-bullhorn horn-am"></i>
-       <a href="#" style="margin-left:10px; text-decoration:none;">Product Changes</a>
-     </div>
+   <div class="Menu-am">
+     <ul id="menulnk" class="menulnk">
+       <li > <a  href="inbox.html" ><i class="fa fa-inbox  icon-am" style="color:grey;"></i> &nbspInbox</a></li>
+       <li class="myactive"> <a  href="expenses.html"><i class="fa fa-clone  myactive_icon" ></i> &nbspExpenses</a></li>
+       <li > <a href="report.html" ><i class="fa fa-newspaper-o icon-am" style="color:grey;"></i> &nbspReport</a></li>
+     </ul>
    </div>
-   <!-- row 3 -->
-
-   <div class="row row3-am">
-     <div>
-       <i class="fa fa-question que-am"></i>
-       <a href="#" style="margin-left:13px; text-decoration:none;">Help and Feedback</a>
-     </div>
-   </div>
-
-   <!-- row 4 -->
-   <div class="row row4-am" style="margin-top:10px;">
-     <div>
-       <i class="fa fa-power-off" style="color:red"></i>
-       <a href="#" style="margin-left:13px; text-decoration:none;">Sign Out</a>
-     </div>
-   </div>
-
-   </div>
-
  </div>
+ <!-- Headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+ <div class="page-header">
 
-</div>
-</div>
+     <h3 class="floatLeft-am" style="color:#999; margin-top:20px; font-weight:300;">
+         <b>Expenses</b>
+    </h3>
+    <div class="dropdown show  " style="margin-left:1182px;">
+      <a class="btn dropdown-toggle btn-success-outline-am" style="margin-top: 20px;"  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <b>New Expense</b>
+      </a>
+      <!-- ************************************* -->
+          <div class="dropdown-menu"  aria-labelledby="dropdownMenuLink" >
+            <ul class="list-group" >
+             <li class="list-group-item" style=" font-size:17px;"> <i class="fa fa-calculator" style="color: #00a5d5; "></i> Expense </li>
+             <li class="list-group-item" style=" font-size:17px;"> <i class="	fa fa-clock-o" style="color: #00a5d5;"></i> Time</li>
+             <li class="list-group-item" style=" font-size:17px;"> <i class="	fa fa-automobile" style="color: #00a5d5;" ></i> Distance </li>
+           </ul>
+         </div>
+   </div>
 
-
-          </div>
-        </div>
-        <!-- Content Column -->
-        <div class="col-lg-10 ">
-
-          <!-- header -->
-          <div class="row header-am" style="height:75px;">
-
-            <div class="col-lg-2 mb4 ">
-              <h3 class="floatLeft-am" style="color:#999; margin-top:20px;">
-                Expenses
-              </h3>
-            </div>
-            <div class="col-lg-10 mb-4 page-header-am">
-              <div class="buttons_container-am floatRight-am">
-                <div class="floatLeft-am">
-                  <div class="buttons_container-am">
-                    <div class="marginRight5-am">
-                     <!-- <button class="btn btn-success-outline-am js_reports_create">
-                       New Report
-                     </button> -->
-                     <div class="dropdown show  " style="margin-left:30px; background-color:white;">
-                       <a class="btn dropdown-toggle btn-success-outline-am"  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         <b>New Expense</b>
-                       </a>
-
-                        <!-- <div class="icon-list-group create-expense-menu hidden">
-
-
-                          <a class="list-group-item has-caret">
-                            <span class="expensicons marginRight vAlignMiddle expensicons-receipt"></span>
-                            Expense
-                          </a>
-                          <a class="list-group-item">
-                            <span class="expensicons marginRight vAlignMiddle expensicons-time"></span>
-                            Time
-                          </a>
-                          <a class="list-group-item">
-                            <span class="expensicons marginRight vAlignMiddle expensicons-car"></span>
-                            Distance
-                          </a>
-
-                          </div> -->
-                           <div class="dropdown-menu"  aria-labelledby="dropdownMenuLink">
-                             <ul class="list-group" >
-                              <li class="list-group-item" style=" font-size:17px;"> <i class="fa fa-calculator" style="color: #00a5d5; "></i> Expense </li>
-                              <li class="list-group-item" style=" font-size:17px;"> <i class="	fa fa-clock-o" style="color: #00a5d5;"></i> Time</li>
-                              <li class="list-group-item" style=" font-size:17px;"> <i class="	fa fa-automobile" style="color: #00a5d5;" ></i> Distance </li>
-                            </ul>
-                          </div>
-                    </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ****************************akshay filter******************* -->
-
-
-    <div class="row">
-        <div class="form-control-static filtertext ">
-            <a class="btn " id="showfilter"><i class="fa fa-filter" style="font-size:24px;"></i>
-              <span id="show">Show Filters</span> <span id="hide" style="display:none">hide filter</span>
-              <span class="badge" style="width: 18px;" id="count"></span>
-             </a>
-
-        </div>
-        <div class="form-control-static resettext">
-             <a class="btn" id="resetbtn"> <i class="fa fa-refresh"></i>&nbsp;Reset </a>
-        </div>
-
-    </div>
-
-
-  </br/>
-
-    <div id="selectfilter"  style="display:none">
-      <div class="row">
-
-            <i class="material-icons icon col-xs-1">&#xe916;</i>
-
-    <div class="form-group form-group-sm col-lg-3 col-md-5 col-xs-11"> <!-- Date input -->
-      <div class="input-group col-md-12">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">To</i></span>
-          <div class="right-inner-addon">
-            <i class="fa fa-calendar"></i>
-            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-
-    <div class="form-group form-group-sm col-lg-3 col-md-5 col-xs-11"> <!-- Date input -->
-      <div class="input-group col-md-12">
-        <div class="input-group-prepend " >
-          <span class="input-group-text" id="basic-addon1">From</i></span>
-          <div class="right-inner-addon ">
-            <i class="fa fa-calendar"></i>
-            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
-          </div>
-        </div>
-
-      </div>
+   <!-- Button *******************************-->
+  <div class="button-grp">
+    <button id="button_exportButton" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export to</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Default CSV</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Create new CSV export layout...</a>
     </div>
   </div>
-
-      <div class="row">
-                  <i class="material-icons col-xs-1 icon">&#xeb3f;</i>
-
-                  <div class="input-group half col-lg-3 col-md-5 col-xs-11">
-                      <input type="text" class="form-control" placeholder="Merchant" aria-label="Username" aria-describedby="basic-addon1">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">  <i class="fa fa-search "></i></span>
-                      </div>
-                  </div>
-
-                  <div class="btn-group btn-group-sm btn-group-justified col-lg-3 col-md-5 col-xs-11" style="margin-left:30px;" role="group" aria-label="Basic example">
-                      <button type="button" class="btn button-grp button-reportfilter">All</button>
-                      <button type="button" class="btn button-grp button-reportfilter">Billable</button>
-                      <button type="button" class="btn button-grp button-reportfilter">Reimbursable</button>
-                  </div>
-
-                  <div class="dropdown show col-lg-2 col-md-5 col-xs-11" style="margin-left:30px; background-color:white;">
-                    <a class="btn dropdown-toggle" style="color:#5b5d63;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      All types
-                    </a>
-
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">All types</a>
-                        <a class="dropdown-item" href="#">Expenses</a>
-                        <a class="dropdown-item" href="#">Receipt</a>
-                        <a class="dropdown-item" href="#">Document</a>
-                      </div>
-                 </div>
-
-                 <div class="col-lg-3">
-
-                 </div>
-
-
-      </div>
-      <br/>
-      <div class="row">
-          <i class="fa fa-search icon" ></i>
-
-          <div class="dropdown show col-lg-3 col-md-5 col-xs-11" style="margin-left:30px; background-color:white; ">
-            <a class="btn dropdown-toggle" style="color:#5b5d63;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              All Categories
-            </a>
-
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">All types</a>
-                <a class="dropdown-item" href="#">Expenses</a>
-                <a class="dropdown-item" href="#">Receipt</a>
-                <a class="dropdown-item" href="#">Document</a>
-              </div>
-         </div>
-      </div>
-        <br />
-      <div class="row">
-              <i class="material-icons icon">assignment</i>
-              <!-- <span class="badge blue badge-pill">Default</span> -->
-            <span class="btn badge">
-              <input type="checkbox" id="default" class="badgebox" name="default" style="margin-top:3px;">
-                <font> Open</font>
-            </span>
-
-            <span class="btn badge processingbadge" >
-              <input type="checkbox" id="default" class="badgebox" name="default" style="margin-top:3px; ">
-                <font style="margin-right:12px;"> Processing</font>
-            </span>
-
-            <span class="btn badge approvedbadge">
-              <input type="checkbox" id="default" class="badgebox" name="default" style="margin-top:3px; ">
-                <font style="margin-right:12px;"> Approved</font>
-            </span>
-
-            <span class="btn badge reimbursedbadge">
-              <input type="checkbox" id="default" class="badgebox" name="default" style="margin-top:3px; ">
-                <font style="margin-right:12px;"> Reimbursed</font>
-            </span>
-
-            <span class="btn badge closebadge">
-              <input type="checkbox" id="default" class="badgebox" name="default" style="margin-top:3px; ">
-                <font style="margin-right:12px;"> Closed</font>
-            </span>
-
-            <span class="btn badge deletebadge">
-              <input type="checkbox" id="default" class="badgebox" name="default" style="margin-top:3px; ">
-                <font style="margin-right:12px;"> Deleted</font>
-            </span>
-
-      </div>
-      </div>
-
-          <!-- ************************************************************ -->
-
-
-
-      </div>
-      <!-- /.row -->
+  <!-- ************************************** -->
+  </div>
+<!-- filterssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+<div class="row" style="margin-left:17%; margin-top:3%;">
+    <div class="form-control-static filtertext ">
+        <a class="btn " id="showfilter"><i class="fa fa-filter" style="font-size:24px;"></i>
+          <span id="show">Show Filters</span> <span id="hide" style="display:none">hide filter</span>
+          <span class="badge" style="width: 18px;" id="count"></span>
+         </a>
 
     </div>
-    <!-- /.container -->
+    <div class="form-control-static resettext" style="margin-top:6px;">
+         <a class="btn" id="resetbtn"> <i class="fa fa-refresh" style="color:grey;"></i>&nbsp;Reset </a>
+    </div>
+
+</div>
+
+
+</br/>
+
+<div id="selectfilter"  style="display:none">
+  <div class="row" style="margin-left:17%;">
+
+        <i class="material-icons icon col-xs-1">&#xe916;</i>
+
+<div class="form-group form-group-sm col-lg-3 col-md-5 col-xs-11"> <!-- Date input -->
+  <div class="input-group col-md-12">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">To</i></span>
+      <div class="right-inner-addon">
+        <i class="fa fa-calendar"></i>
+        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
 
+<div class="form-group form-group-sm col-lg-3 col-md-5 col-xs-11"> <!-- Date input -->
+  <div class="input-group col-md-12">
+    <div class="input-group-prepend " >
+      <span class="input-group-text" id="basic-addon1">From</i></span>
+      <div class="right-inner-addon ">
+        <i class="fa fa-calendar"></i>
+        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+  <div class="row" style="margin-left:17%;">
+              <i class="material-icons col-xs-1 icon">&#xeb3f;</i>
+
+              <div class="input-group half col-lg-3 col-md-5 col-xs-11">
+                  <input type="text" class="form-control" placeholder="Merchant" aria-label="Username" aria-describedby="basic-addon1">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">  <i class="fa fa-search "></i></span>
+                  </div>
+              </div>
+
+              <div class="btn-group btn-group-sm btn-group-justified col-lg-3 col-md-5 col-xs-11" style="margin-left:30px;" role="group" aria-label="Basic example">
+                  <button type="button" class="btn button-grp button-reportfilter">All</button>
+                  <button type="button" class="btn button-grp button-reportfilter">Billable</button>
+                  <button type="button" class="btn button-grp button-reportfilter">Reimbursable</button>
+              </div>
+
+              <div class="dropdown show col-lg-2 col-md-5 col-xs-11" style="margin-left:30px; background-color:white;">
+                <a class="btn dropdown-toggle" style="color:#5b5d63;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  All types
+                </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">All types</a>
+                    <a class="dropdown-item" href="#">Expenses</a>
+                    <a class="dropdown-item" href="#">Receipt</a>
+                    <a class="dropdown-item" href="#">Document</a>
+                  </div>
+             </div>
+
+             <div class="col-lg-3">
+
+             </div>
 
 
+  </div>
+  <br/>
+  <div class="row" style="margin-left:17%;">
+      <i class="fa fa-search icon" ></i>
 
+      <div class="dropdown show col-lg-3 col-md-5 col-xs-11" style="margin-left:30px; background-color:white; ">
+        <a class="btn dropdown-toggle" style="color:#5b5d63;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All Categories
+        </a>
 
-    <div class="site-footer" >
-            <div class="site-footer-pos">
-            <div class="bottom-footer">
-              <div class="row" style="border-top:1px;">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-              <ul class="footer-nav-left">
-                <li><a href="#" class="alert-link">OUR PRODUCT</a></li>
-                    <li><a href="#" class="alert-link">UPGRADE</a></li>
-                    <li><a href="#" class="alert-link">PRICING</a></li>
-                    <li><a href="#" class="alert-link">JOBS</a></li>
-                    <li><a href="#" class="alert-link">ABOUT US</a></li>
-                    <li><a href="#" class="alert-link">BLOG</a></li>
-                    <li><a href="#" class="alert-link">COMMUNITY</a></li>
-                    <li><a href="#" class="alert-link">STATUS</a></li>
-                    <li><a href="#" class="alert-link">PRIVACY</a></li>
-                    <li><a href="#" class="alert-link">HELP</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 cpyright" style="font-size: 10px">©2018 PeshwaiExpense, Inc.</div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">All types</a>
+            <a class="dropdown-item" href="#">Expenses</a>
+            <a class="dropdown-item" href="#">Receipt</a>
+            <a class="dropdown-item" href="#">Document</a>
           </div>
-        </div>
-      </div>
-      </div>
+     </div>
+  </div>
+    <br />
+  <div class="row" style="margin-left:17%;">
+          <i class="material-icons icon">assignment</i>
+          <!-- <span class="badge blue badge-pill">Default</span> -->
+        <span class="btn badge openbadge">
+          <input type="checkbox" id="open" class="badgebox" name="default" style="margin-top:3px;">
+            <font> Open</font>
+        </span>
+
+        <span class="btn badge processingbadge" >
+          <input type="checkbox" id="default" class="badgebox" name="default" style="margin-top:3px; ">
+            <font style="margin-right:12px;"> Processing</font>
+        </span>
+
+        <span class="btn badge approvedbadge">
+          <input type="checkbox" id="default" class="badgebox" name="default" style="margin-top:3px; ">
+            <font style="margin-right:12px;"> Approved</font>
+        </span>
+
+        <span class="btn badge reimbursedbadge">
+          <input type="checkbox" id="default" class="badgebox" name="default" style="margin-top:3px; ">
+            <font style="margin-right:12px;"> Reimbursed</font>
+        </span>
+
+        <span class="btn badge closebadge">
+          <input type="checkbox" id="close" class="badgebox" name="default" style="margin-top:3px; ">
+            <font style="margin-right:12px;"> Closed</font>
+        </span>
+
+        <span class="btn badge deletebadge">
+          <input type="checkbox" id="default" class="badgebox" name="default" style="margin-top:3px; ">
+            <font style="margin-right:12px;"> Deleted</font>
+        </span>
+
+  </div>
+  </div>
+<!-- Aniket********************************************************************************** -->
+
+<div id="reportsContainer" class="table-Expenses" style="width:75%; margin-left:16%;">
+   <table class="table table-responsive-md table-reports table-curved table-cards  table-selectable table-sortable table-fixed table-textSmall table-textOverflowEllipsis table-clickable" data-toggle="table" data-sort-name="stargazers_count" data-sort-order="desc"
+     id="reportsTable" cellspacing="0" cellpadding="0" border="0">
+     <colgroup>
+       <col width="10">
+       <col width="20">
+       <col width="60">
+       <col width="15">
+       <col width="15">
+       <col width="50">
+       <col width="50">
+
+       <col width="50">
+
+     </colgroup>
+     <thead>
+       <tr>
+         <th class="checkbox sorting_disabled"><input class="selectall_checkbox" type="checkbox" onclick="checkFluency()" id="checkboxAll"></th>
+         <th class="reportName js_table_sort width-25 px sorting" data-field="name" data-sortable="true">DATE</th>
+         <th class="cachedTotal js_table_sort width-50 px sorting" data-field="stargazers_count" data-sortable="true">MERCHANT</th>
+         <th class="policy js_table_sort width-70 px sorting_disabled">AMOUNT</th>
+         <th class="images__bill  sorting_disabled" type='images'>&nbsp;</th>
+         <th class="accountEmail js_table_sort sorting">POLICY</th>
+         <th class="managerEmail js_table_sort sorting">CATEGORY</th>
+         <th class="submitted js_table_sort sorting">COMMENT</th>
+
+       </tr>
+     </thead>
+     <tbody>
+       <tr class="oddhoverable" id="#reportsTable_29332021">
+
+         <td class="checkbox"><input class="reportstable_checkbox" name="checkbox_1" type="checkbox"></td>
+         <td class="js_goToReport type-date">
+           <div class="type-money-expense">
+             <i class="fa fa-money" ></i>
+           </div>
+           <div class="d-inline-block ex-3 type-date" class="textOverflow">Mar 16</div>
+         </td>
+
+         <td class="js_goToReport reportName">
+           <div class="merchant"><a class="d-inline-block mt-3">aniket@gmail.com</a></div>
+           <div class="report" style="padding-top:10px;"><label class="filter-state smallState closed">Closed</label>
+             <div class="reportID"><label>XYZ</label></div>
+           </div>
+
+         </td>
 
 
+         <td class="js_goToReport amount textRight">
+           <div class="meta">
+             <div class="amount">
+               <div><span>₹</span>900.<span>00</span></div>
+             </div>
+             <div class="avatar-stack">
+               <div class="avatar-pill js_tooltip">
+                 <img class="avatar-pill__image" src="https://d1wpcgnaa73g0y.cloudfront.net/9193998a13c0351157b11e627caa59b868f438d2_128.jpeg" >
+                 <span class="avatar-pill__name"></span></div>
+             </div>
+           </div>
+         </td>
+
+         <td class="js_goToReport pageExpenseImg"><img class="pageExpenseImgs" src="assets/images/expensemissing.png"></td>
+
+         <td class="js_goToReport policy">
+           <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale">aniketjondhale</div>
+         </td>
+
+         <td class="js_goToReport">
+           <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale@gmail.com">phone</div>
+         </td>
+
+         <td class="js_goToReport">
+           <div class="d-inline-block mt-3" class="textOverflow">Business Call</div>
+         </td>
+
+       </tr>
+
+
+       <tr class="evenhoverable" id="#reportsTable_29394607">
+
+         <td class="checkbox"><input class="reportstable_checkbox" name="checkbox_2" type="checkbox"></td>
+
+         <td class="js_goToReport type-date">
+           <div class="type-money-expense">
+             <i class="fa fa-money"></i>
+           </div>
+           <div class="d-inline-block ex-3 type-date" class="textOverflow">Mar 19</div>
+         </td>
+
+         <td class="js_goToReport reportName">
+           <div class="merchant"><a class="d-inline-block mt-3">vinita@gmail.com</a></div>
+           <div class="report" style="padding-top:10px;"><label class="filter-state smallState open">Open</label>
+             <div class="reportID"><label>ABC</label></div>
+           </div>
+
+         </td>
+
+
+         <td class="js_goToReport amount textRight">
+           <div class="meta">
+             <div class="amount">
+               <div><span>₹</span>800.<span>00</span></div>
+             </div>
+             <div class="avatar-stack">
+               <div class="avatar-pill js_tooltip">
+                 <img class="avatar-pill__image" src="https://d1wpcgnaa73g0y.cloudfront.net/9193998a13c0351157b11e627caa59b868f438d2_128.jpeg" alt="Aniket J (aniketjondhale@gmail.com)">
+                 <span class="avatar-pill__name"></span></div>
+             </div>
+           </div>
+         </td>
+
+         <td class="js_goToReport pageExpenseImg"><img class="pageExpenseImgs" src="assets/images/expensemissing.png"></td>
+
+         <td class="js_goToReport policy">
+           <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale">aniketjondhale</div>
+         </td>
+
+         <td class="js_goToReport">
+           <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale@gmail.com">Meals</div>
+         </td>
+
+         <td class="js_goToReport">
+           <div class="d-inline-block mt-3" class="textOverflow">Night Extra Time</div>
+         </td>
+
+       </tr>
+       <tr class="oddhoverable" id="#reportsTable_29332021">
+         <td class="checkbox"><input class="reportstable_checkbox" name="checkbox_3" type="checkbox"></td>
+         <td class="js_goToReport type-date">
+           <div class="type-money-expense">
+             <i class="fa fa-money"></i>
+           </div>
+           <div class="d-inline-block ex-3 type-date" class="textOverflow">Mar 20</div>
+         </td>
+
+         <td class="js_goToReport reportName">
+           <div class="merchant"><a class="d-inline-block mt-3">Tiffin_Food</a></div>
+           <div class="report" style="padding-top:10px;"><label class="filter-state smallState closed">Closed</label>
+             <div class="reportID"><label>MNO</label></div>
+           </div>
+
+         </td>
+
+
+         <td class="js_goToReport amount textRight">
+           <div class="meta">
+             <div class="amount">
+               <div><span>₹</span>5000.<span>00</span></div>
+             </div>
+             <div class="avatar-stack">
+               <div class="avatar-pill js_tooltip">
+                 <img class="avatar-pill__image" src="https://d1wpcgnaa73g0y.cloudfront.net/9193998a13c0351157b11e627caa59b868f438d2_128.jpeg" alt="Aniket J (aniketjondhale@gmail.com)">
+                 <span class="avatar-pill__name"></span></div>
+             </div>
+           </div>
+         </td>
+
+         <td class="js_goToReport pageExpenseImg"><img class="pageExpenseImgs" src="assets/images/expensemissing.png"></td>
+
+         <td class="js_goToReport policy">
+           <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale">aniketjondhale</div>
+         </td>
+
+         <td class="js_goToReport">
+           <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale@gmail.com">Food</div>
+         </td>
+
+         <td class="js_goToReport">
+           <div class="d-inline-block mt-3" class="textOverflow">Afternoon Lunch</div>
+         </td>
+       </tr>
+
+       <!-- <tr class="evenhoverable" id="reportsTable_29331658">
+         <td class="checkbox"><input class="reportstable_checkbox" name="checkbox_4" type="checkbox"></td>
+         <td class="js_goToReport type-date">
+           <div class="type-money-expense">
+             <i class="fa fa-money"></i>
+           </div>
+           <div class="d-inline-block ex-3 type-date" class="textOverflow">Mar 20</div>
+         </td>
+
+         <td class="js_goToReport reportName">
+           <div class="merchant"><a class="d-inline-block mt-3">QWE</a></div>
+           <div class="report" style="padding-top:10px;"><label class="filter-state smallState closed">Closed</label>
+             <div class="reportID"><label>LMN</label></div>
+           </div>
+
+         </td>
+
+
+         <td class="js_goToReport amount textRight">
+           <div class="meta">
+             <div class="amount">
+               <div><span>₹</span>4900.<span>00</span></div>
+             </div>
+             <div class="avatar-stack">
+               <div class="avatar-pill js_tooltip">
+                 <img class="avatar-pill__image" src="https://d1wpcgnaa73g0y.cloudfront.net/9193998a13c0351157b11e627caa59b868f438d2_128.jpeg" alt="Aniket J (aniketjondhale@gmail.com)">
+                 <span class="avatar-pill__name"></span></div>
+             </div>
+           </div>
+         </td>
+
+         <td class="js_goToReport pageExpenseImg"><img class="pageExpenseImgs" src="expensemissing.png"></td>
+
+         <td class="js_goToReport policy">
+           <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale">aniketjondhale</div>
+         </td>
+
+         <td class="js_goToReport">
+           <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale@gmail.com">Stationary</div>
+         </td>
+
+         <td class="js_goToReport">
+           <div class="d-inline-block mt-3" class="textOverflow">Pages,Pens,etc</div>
+         </td>
+       </tr> -->
+
+     </tbody>
+   </table>
+ </div>
+
+ <div id="reports_pagination_container_bottom" class="pagination-bar-bottom">
+   <div class="pagination-bar">
+     <div class="pagination-bar__pages">
+       <label for="pages" class="js_label">Reports 1 to 1</label>
+       <span class="btn-group">
+                 <button class="btn btn-secondary-outline fa fa-arrow-circle-left disabled js_previous"></button>
+                 <button class="btn btn-secondary-outline fa fa-arrow-circle-right disabled js_previous"></button>
+             </span>
+     </div>
+   </div>
+ </div>
+
+
+<!-- FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+<div class="footer" style="margin-left:15%;">
+  <div class="bottom-footer">
+    <div class="row" style="border-top:1px;">
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+    <ul class="footer-nav-left">
+      <li><a href="#" class="alert-link">OUR PRODUCT</a></li>
+          <li><a href="#" class="alert-link">UPGRADE</a></li>
+          <li><a href="#" class="alert-link">PRICING</a></li>
+          <li><a href="#" class="alert-link">JOBS</a></li>
+          <li><a href="#" class="alert-link">ABOUT US</a></li>
+          <li><a href="#" class="alert-link">BLOG</a></li>
+          <li><a href="#" class="alert-link">COMMUNITY</a></li>
+          <li><a href="#" class="alert-link">STATUS</a></li>
+          <li><a href="#" class="alert-link">PRIVACY</a></li>
+          <li><a href="#" class="alert-link">HELP</a></li>
+          <!-- <li class="cpyright-am">©2018 PeshwaiExpense, Inc.</li> -->
+    </ul>
+  </div>
+  <p class="cpyright-am" style="margin-left:75px;">©2018 PeshwaiExpense, Inc.</p>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
+</div>
+</div>
+</div>
+
+<!-- Modal ********************************************************************************************** -->
+<!-- Modal  -->
+<div class="modal fade modal-am-deco" id="myModal2" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+
+<div class="modal-body">
+
+<!-- row 1 -->
+<div class="row row-modal-am">
+<div><button type="button" class="close" data-dismiss="modal" style="margin-left:10px;margin-top:0px;">×</button></div>
+<div class="user-image-model">
+<a  href="#" data-toggle="modal" data-target="#myModal2" id="profile_image">
+ <img src="assets/images/usericon.png" alt="" height="160" width="160">
+</a>
+</div>
+<div class="user-Email-am" style="font-weight:500; color: black; ">
+<p style="margin-left:20px;">Bhupesh Patil<br>bhupesh.patil@gmail.com</p>
+<a href="" class="btn btn-secondary-am btn-sm fa fa-gear" style="">Account Settings</a>
+</div>
+</div>
+
+
+<!-- row 2 -->
+<div class="row row2-am">
+<div class="row2-hover-am">
+<i class="fa fa-bullhorn horn-am"></i>
+<a href="#" style="margin-left:10px; text-decoration:none;">Product Changes</a>
+</div>
+</div>
+<!-- row 3 -->
+
+<div class="row row3-am">
+<div>
+<i class="fa fa-question que-am"></i>
+<a href="#" style="margin-left:13px; text-decoration:none;">Help and Feedback</a>
+</div>
+</div>
+
+<!-- row 4 -->
+<div class="row row4-am" style="margin-top:10px;">
+<div>
+<i class="fa fa-power-off" style="color:red"></i>
+<a href="#" style="margin-left:13px; text-decoration:none;">Sign Out</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/modal.js"></script>
-    <scrip src="assets/js/checkboxQuery.js"></scrip>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-
   </body>
 
 </html>

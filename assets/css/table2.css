@@ -17,9 +17,6 @@ tr {
   width: auto;
 }
 
-tr:hover td {
-  background-color: #d4f2fa;
-}
 
 body{
   background-color: #eee;
@@ -40,10 +37,9 @@ body{
   font-size: 10px;
   height: 17px;
   line-height: 1.4;
-  margin: 1px 110px 10px -10px;
-  position: relative;
-  top: -2px;
-  width: 66px;
+  top: 13px;
+  font-size: 13px;
+  width: 67px;
 }
 
 .impstar {
@@ -55,9 +51,7 @@ body{
   position: relative;
 }
 
-.table-reports tr td.reportName a {
-  color: #5d6e73;
-}
+
 .table thead th {
     /* background: rgba(238,238,238,.5); */
     border-bottom: 0px solid #ddd;
@@ -72,10 +66,6 @@ body{
 
 
 
-.filter-state.open {
-  background: #00a5d5;
-  color: #fff;
-}
 
 .filter-state.closed {
   background: #ccc;
@@ -142,6 +132,62 @@ tr td:last-child, tr th:last-child {
     border-color: #acd0e5;
     color: #006894;
 }
-#button_exportButton:hover{
-  background-color: #008CBA;
+.avatar-pill__image{
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+    height: 28px;
+    width: 28px;
+    margin-left: 28px;
+
+}
+.pageExpenseImgs{
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  height: 80px;
+}
+.type-date{
+    margin-left: -6px;
+    color: #999;
+    font-size: small;
+}
+.type-money-expense
+{
+  color: #999 !important;
+  font-size: 25px;
+}
+.table-reports tr td.reportName a
+{
+  color:black;
+  font-size: 16px;
+}
+.filter-state.open {
+  background: #00a5d5;
+  color: #fff;
+  /* margin-left: 6px;
+  display: flow-root; */
+}
+.reportID {
+      display: inline-block;
+      color: #999;
+}
+.meta .amount {
+    font-size: 22px;
+    font-weight: 300;
+    height: 30px;
+    vertical-align: top;
+}
+.meta .amount span {
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    top: 3px;
+    vertical-align: top;
+}
+
+.fa-money{
+  color: #999 !important;
 }

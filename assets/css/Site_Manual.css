@@ -8,7 +8,7 @@
 
 #sidebar{
   background: #3C3939;
-  width:270px;
+  width:225px;
   height:100%;
   display:block;
   overflow-x: hidden;
@@ -18,6 +18,8 @@
   top:0px;
   transition:left 0.3s linear;
 }
+
+
 
 .active{
     background: rgba(93,110,115,.3);
@@ -36,12 +38,16 @@
   positon:absolute;
 }
 
+.footer{
+  margin-left: 10%;
+}
+
 .site-footer{
   color:#000;
   position: fixed;
     bottom: 0;
     width: 95%;
-    margin-left:20px;
+    /* margin-left: 5%;; */
     /* border-top: 1px; */
     /* border-color: #000; */
   /* margin-top: 30px; */
@@ -111,8 +117,9 @@ list-style: none;
  height: 60px;
  width: 60px;
  align-items: center;
+ position: relative;
  margin-top:  30px;
- margin-left: 70px;
+ /* margin-left: 70px; */
 }
 
 .user-Email-am{
@@ -301,7 +308,6 @@ overflow:hidden;
 .page-header-am{
   height: 72px;
   padding: 20px;
-
 }
 
 .floatRight-am{
@@ -327,8 +333,6 @@ position: relative;
   margin-right: 5px;
 }
 
-
-
 .btn-success-outline-am{
   background-color: #fff;
 background-image: none;
@@ -341,14 +345,12 @@ color: #208e4e;
 }
 
 .btn-success-outline-am:hover{
-   background-color: #2ecc71;
-   color: white;
+  background-color: #2ecc71;
+  color: white;
 }
 
 .header-am{
-  /* margin-top: -50px; */
-
-
+  margin-top: -50px;
 
   border-bottom: 1px solid #ddd;
 }
@@ -359,11 +361,24 @@ color: #208e4e;
 
 #cpyright-am{
   font-size: 10px
-
+  /* margin-left:100px; */
 }
 
-@media screen and (max-width:) {
-#container-fluid{
-  width: 100%;
+.cpyright-am{
+  margin-left: 15%;
 }
-}
+
+.modal-backdrop {
+    z-index: 100000 !important;
+  }
+
+  .modal {
+    z-index: 100001 !important;
+  }
+
+  @media (max-width: 699px)
+   {
+        .footer{
+          margin-bottom: -30%;
+        }
+   }
